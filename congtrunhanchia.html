@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cộng trừ nhân chia</title>
+</head>
+<body>
+<form action="">
+  <input type="number" name="cot1" id="cot1" >
+  <p> ? </p>
+  <input type="number" name="cot2" id="cot2" >  <br>  <br>
+  <button type="button" onclick="add()">Cộng(+)</button>
+  <button type="button" onclick="sub()">Trừ(-)</button>
+  <button type="button" onclick="mul()">Nhân(*)</button>
+  <button type="button" onclick="div()">Chia(/)</button>
+</form>
+
+<script>
+
+  function add(){
+    let hang1 = +document.getElementById("cot1").value;
+    let hang2 = +document.getElementById("cot2").value;
+    tong = hang1 + hang2;
+    alert("Tổng =" + tong);
+  }
+  function sub(){
+    let hang1 = +document.getElementById("cot1").value;
+    let hang2 = +document.getElementById("cot2").value;
+    hieu = hang1 - hang2;
+    alert("Hiệu =" + hieu);
+  }
+  function mul(){
+    let hang1 = +document.getElementById("cot1").value;
+    let hang2 = +document.getElementById("cot2").value;
+    tich = hang1 * hang2;
+    alert("Tích =" + tich);
+  }
+  function div(){
+    let hang1 = +document.getElementById("cot1").value;
+    let hang2 = +document.getElementById("cot2").value;
+    thuong = hang1 / hang2;
+    alert("Thương =" + thuong);
+  }
+</script>
+</body>
+</html>
